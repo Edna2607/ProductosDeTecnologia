@@ -1,0 +1,404 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* *Estilos del header */
+header {
+    width: 100%;
+    height: 150px; /*ancho del banner superior*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /*Color del banner superior*/
+    color: var(--cor-de-second-text);
+}
+
+.menu__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__icon {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/*Estilo del titulo superior*/
+.menu__title {
+    flex: 1;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 25px; /*distancia del titulo con el icono*/
+    color: grey; /*Color del titulo superior*/
+}
+
+/* Estilos para el main */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+/*Titulo : Productos tecnologicos y Registrar productos*/
+h2 {
+    color: black; /*Color de los titulos*/
+    text-align: center;
+    font-size: 25px;
+}
+
+h3 {
+    color: grey;
+    font-size: 14px;
+}
+
+.error-image {
+    width: 60%;
+    height: auto;
+}
+
+/* Sección Cards */
+#list-products{
+    overflow-y: auto;
+    max-height: 510px;
+}
+
+/*Estilo Productos tecnologicos*/
+.homeSide {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 5px;
+    background: var(--cor-background); /*fondo blanco*/
+    box-shadow: var(--box-shadow);
+}
+
+.full-width {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 15px auto 25px;
+}
+form {
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/*Estilo de la seccion de las cartas*/
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    background-color: grey; /*fondo del contorno de las cartas*/
+    box-shadow: var(--box-shadow);
+    height: fit-content;
+    border-radius: 20px;
+}
+
+/*Seccion cartas interno*/
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    background: var(--cor-background); /*fondo blanco de las cartas*/
+    height: 15rem;
+    height: fit-content;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px;
+}
+
+.card-container--img {
+    aspect-ratio: 1/1;
+    height: 11rem;
+    border-radius: 5px 5px 0 0;
+}
+
+.card .card-container--info { /*Estilo del precio del producto*/
+    color: var(--cor-de-text-form); /*color del precio de los productos*/
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 60px 5px 0 0;
+}
+
+/*Estilo del nombre del producto*/
+.card-container--title { 
+    color:black;
+    font-size: 13px;
+    text-align: center; /*alinear el texto al centro */
+    margin-bottom: 0;
+}
+
+.card-container--value {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card-container--value img {
+    transition: transform 0.3s ease;
+}
+
+.card-container--value img:hover {
+    transform: scale(1.1);
+}
+
+.card-container--icon {
+    cursor: pointer;
+}
+
+/* *Sección Form */
+.registerSide { /*Estilo de la seccion del formato*/
+    background: var(--cor-background); /*Fondo del color del formato*/
+    padding: 20px;
+    margin: 0;
+    box-shadow: var(--box-shadow);
+}
+
+form {
+    width: 100%;
+}
+
+.form__field {
+    border: none;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow); /*sombra a la caja de los campos*/
+}
+
+.form__field:last-child {
+    margin-bottom: 0;
+}
+
+.full__field:hover {
+    border: 1px solid var(--cor-text-border); 
+    box-shadow: none;
+}
+
+.form__field input {
+    margin-right: 10px;
+}
+
+/*Estilo de los campos*/
+.field__label {
+    font-weight: 500; 
+    line-height: 20px;
+    font-size: 15px; /*Tamaño de la letra*/
+    color: black; /*Color de la letra de los campos*/
+}
+
+.full__field {
+    display: block;
+    width: 94%;
+    padding: 1em;
+    font-size: 13px; /*tamaño de la instruccion del campo*/
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+/*cuando pase el cursor por  encima de los campos se hace un borde de color negro*/
+.full__field:hover {
+    border: 2px solid; /*borde de los campos*/
+}
+
+/*div de la parte de los botones => Registrar y Eliminar*/
+.Form__article {
+    display: flex;
+    justify-content: space-between;
+    background: var(--cor-background); /*Color de fondo de los botones*/
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/*Boton Registrar*/
+.Form__boton {
+    background-color: black;
+    display: block;
+    border: none;
+    padding: 1em 4em;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--cor-de-second-text);
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-top: 2rem;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+/*Cuando pase el mouse por encima del boton => Registrar, cambia de color*/
+.Form__boton:hover {
+    background: grey;
+}
+
+/*Color del boton => Eliminar*/
+#delete {
+    background-color: rgb(133, 88, 175);
+}
+
+/*Cuando pase el mouse por encima del boton => Eliminar, cambia de color*/
+#delete:hover {
+    background-color: rgb(218, 106, 149);
+}
+
+
+.error-message {
+    display: block;
+    margin-top: 5px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .925rem;
+    color: var(--cor-de-third-text);
+    font-size: 12px;
+}
+
+/* *Sección Footer */
+.footer {
+    font-size: 12px;
+    font-weight: medium;
+    text-align: center;
+    background: black; /*Fondo del footer*/
+    color: grey;
+    padding: 1em 0;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* *Medias query*/
+
+/* Media query para celulares con ancho mínimo de 360px */
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+
+    /* *HEADER  */
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        color: var(--cor-de-second-text);
+    }
+    .menu__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:inherit;
+        
+    }
+
+    .menu__icon {
+        width: 40px; /*Tamaño de los iconos*/
+        margin-right: 10px;
+        margin-bottom: 10px;
+        /*display: none; = de esta forma se pueden ocultar los iconos en modo : movil*/
+    }
+
+    /*se oculta el primer icono*/
+    .menu__icon:first-child{
+        display: none;
+    }
+
+    /*Tamaño del titulo*/
+    .menu__title {
+        font-size: 25px;
+        padding-bottom: 25px;
+    }
+
+    /* *MAIN */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        box-shadow: var(--box-shadow);
+        width: 100%;
+    }
+
+    .registerSide {
+        grid-row: 1;
+    }
+
+    #list-products {
+        grid-row: 2;
+        width: 90%;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .homeSide {
+        grid-template-columns: 1fr;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        background: grey;
+        box-shadow: var(--box-shadow);
+        height: fit-content;
+        border-radius: 20px;
+        width: 90%;
+    }
+    .registerSide {
+        width: 80%;
+    }
+    form {
+        grid-template-columns: 1fr;
+        width: 100%;
+        /* Dos columnas en pantallas más grandes */
+    }
+    .full__field {
+        width: 90%;
+    }
+    
+    .Form__article {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .Form__botones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .Form__boton {
+        padding: 1em 3em;
+        margin: 10px;
+    }
+    
+}
