@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": "22f1",
+      "name": "consola manual",
+      "price": "100",
+      "image": "https://smartjoys.co/wp-content/uploads/2023/12/ConsolaR35S.jpg"
+    },
+    {
+      "id": "158d",
+      "name": "Proyector de Galaxia Planetario",
+      "price": "39",
+      "image": "https://smartjoys.co/wp-content/uploads/2024/03/ProyectorPlanetario.jpg"
+    },
+    {
+      "id": "29c0",
+      "name": "Convertidor SmartTv - Watch Onn Full HD",
+      "price": "37",
+      "image": "https://smartjoys.co/wp-content/uploads/2024/03/OnnFullHD.jpg"
+    },
+    {
+      "id": "2453",
+      "name": "Bolso Antirobo con puerto USB",
+      "price": "18",
+      "image": "https://smartjoys.co/wp-content/uploads/2024/01/BolsoAntirrobo.jpg"
+    },
+    {
+      "id": "2bcc",
+      "name": "Proyector Pórtatil ",
+      "price": "170",
+      "image": "https://smartjoys.co/wp-content/uploads/2024/05/ProyectorT100.jpg"
+    },
+    {
+      "id": "ef2e",
+      "name": "Control Remoto Air Mouse",
+      "price": "8",
+      "image": "https://smartjoys.co/wp-content/uploads/2022/12/Air-Mouse.jpg"
+    },
+    {
+      "id": "be16",
+      "name": "AirPods Pro (segunda generacion)",
+      "price": "32",
+      "image": "https://smartjoys.co/wp-content/uploads/2023/02/Airpods-Pro2da-Gen6.jpg"
+    },
+    {
+      "id": "4f89",
+      "name": "Consola Arcade Box",
+      "price": "66",
+      "image": "https://smartjoys.co/wp-content/uploads/2023/04/ConsolaArcadeBox.jpg"
+    },
+    {
+      "id": "37b9",
+      "name": "Parlante Astronauta",
+      "price": "23",
+      "image": "https://smartjoys.co/wp-content/uploads/2023/11/AstronautaFlotanteY-598.jpg"
+    }
+  ]
+}
